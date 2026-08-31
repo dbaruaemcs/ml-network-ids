@@ -1,0 +1,60 @@
+Machine Learning Network IDS
+Baseline Experiment
+
+Dataset:
+CIC-IDS2017
+
+Dataset Subset:
+Friday-WorkingHours-Afternoon-DDos
+
+Objective:
+Determine whether a Random Forest classifier can distinguish
+BENIGN network flows from DDoS attack flows.
+
+Model:
+Random Forest
+
+Model Parameters:
+n_estimators = 100
+class_weight = balanced
+random_state = 42
+train/test ratio = 80/20
+
+Test Samples:
+44,617
+
+Results:
+Accuracy:  0.9999
+Precision: 1.0000
+Recall:    0.9999
+F1 Score:  0.9999
+ROC-AUC:   1.0000
+
+Confusion Matrix:
+
+[[19014     0]
+ [    3 25600]]
+
+False Positives:
+0
+
+False Negatives:
+3
+
+Initial Interpretation:
+
+The model achieved near-perfect performance on the
+randomly selected test set.
+
+However, this result should not yet be interpreted as
+evidence of real-world generalization.
+
+Further experiments are required to investigate:
+
+1. Potential data leakage
+2. Dataset-specific patterns
+3. Feature importance
+4. Cross-day generalization
+5. Cross-attack generalization
+6. False-positive behavior
+7. Performance on unseen attack types
