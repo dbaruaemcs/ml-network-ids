@@ -9,7 +9,7 @@ from pathlib import Path
 DATA_DIR = Path("data")
 
 INPUT_FILE = DATA_DIR / "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
-OUTPUT_FILE = DATA_DIR / "ddos_clean.csv"
+OUTPUT_FILE = DATA_DIR / "ddos_clean_no_port.csv"
 
 
 # ==========================================
@@ -50,6 +50,7 @@ columns_to_remove = [
     "Flow ID",
     "Source IP",
     "Source Port",
+    "Destination IP",
     "Destination IP",
     "Timestamp"
 ]

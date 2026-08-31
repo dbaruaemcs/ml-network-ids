@@ -15,8 +15,8 @@ from sklearn.ensemble import RandomForestClassifier
 DATA_DIR = Path("data")
 MODEL_DIR = Path("models")
 
-INPUT_FILE = DATA_DIR / "ddos_clean.csv"
-MODEL_FILE = MODEL_DIR / "random_forest_ids.pkl"
+INPUT_FILE = DATA_DIR / "ddos_clean_no_port.csv"
+MODEL_FILE = MODEL_DIR / "random_forest_ids_no_port.pkl"
 
 
 # ==========================================
