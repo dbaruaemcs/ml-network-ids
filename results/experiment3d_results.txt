@@ -1,0 +1,40 @@
+EXPERIMENT 3D - FALSE-NEGATIVE ANALYSIS
+======================================================================
+
+Model: Experiment 3C Random Forest
+Training: Wednesday DoS-family traffic
+Testing: Friday DDoS traffic
+Destination Port: REMOVED
+
+FALSE-NEGATIVE SUMMARY
+======================================================================
+Total DDoS attacks: 100,000
+Correctly detected: 63,507
+False negatives: 36,493
+Attack recall: 0.6351
+False-negative rate: 0.3649
+
+TOP 20 FEATURE DIFFERENCES
+======================================================================
+
+                    Feature  Detected_Mean  Missed_Mean  Relative_Difference
+             URG Flag Count   0.000000e+00     0.000082         82207.546653
+          Min Packet Length   1.606122e-03     5.988162          3727.333084
+      Fwd Packet Length Min   1.606122e-03     5.988162          3727.333084
+               Flow IAT Min   1.864763e+01  5372.720796           287.118167
+      Bwd Packet Length Min   1.237659e-02     1.555175           124.654566
+                Fwd IAT Min   3.465657e+02  5370.146247            14.495322
+              Fwd Packets/s   1.870395e+01   272.197225            13.552925
+             Flow Packets/s   5.052703e+01   423.733215             7.386268
+              Bwd Packets/s   3.182308e+01   151.535990             3.761827
+             ACK Flag Count   2.879210e-01     0.999014             2.469748
+    Init_Win_bytes_backward   2.289384e+02    -0.067136             1.000293
+     Packet Length Variance   6.695477e+06  1672.857569             0.999750
+      Bwd Packet Length Std   3.308728e+03     0.985023             0.999702
+      Bwd Packet Length Max   7.245437e+03     4.118132             0.999432
+          Packet Length Std   2.481808e+03     1.779750             0.999283
+                   Idle Std   7.039145e+06  5713.424492             0.999188
+               Bwd IAT Mean   1.760713e+05   158.578734             0.999099
+                Bwd IAT Std   3.442879e+05   348.157407             0.998989
+Total Length of Bwd Packets   1.160102e+04    11.732469             0.998989
+          Subflow Bwd Bytes   1.160102e+04    11.732469             0.998989

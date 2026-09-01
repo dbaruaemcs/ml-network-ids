@@ -1,0 +1,32 @@
+EXPERIMENT 3B - CROSS-DAY BINARY GENERALIZATION
+======================================================================
+
+Training days: Monday, Tuesday, Wednesday
+Testing days: Thursday, Friday
+Model: Random Forest
+Train/test design: temporal cross-day validation
+Destination Port: REMOVED
+Random state: 42
+
+MODEL EVALUATION
+======================================================================
+Accuracy : 0.6398
+Precision: 0.9952
+Recall   : 0.2810
+F1 Score : 0.4382
+
+CLASSIFICATION REPORT
+======================================================================
+              precision    recall  f1-score   support
+
+      ATTACK       1.00      0.28      0.44    100000
+      BENIGN       0.58      1.00      0.73    100000
+
+    accuracy                           0.64    200000
+   macro avg       0.79      0.64      0.59    200000
+weighted avg       0.79      0.64      0.59    200000
+
+CONFUSION MATRIX
+======================================================================
+[[99864   136]
+ [71902 28098]]

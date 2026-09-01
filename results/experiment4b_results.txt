@@ -1,0 +1,57 @@
+EXPERIMENT 4B - FEATURE ENGINEERING
+======================================================================
+
+Dataset: CIC-IDS2017
+Training: Wednesday WorkingHours
+Testing: Friday Afternoon DDoS
+Maximum samples per class: 100,000
+Random state: 42
+Model: Random Forest
+Destination Port: REMOVED
+
+METRICS
+======================================================================
+Accuracy : 0.8147
+Precision: 0.9986
+Recall   : 0.6346
+F1 Score : 0.7760
+
+True Negatives : 97,631
+False Positives: 87
+False Negatives: 36,544
+True Positives  : 63,456
+
+CLASSIFICATION REPORT
+======================================================================
+              precision    recall  f1-score   support
+
+      ATTACK       1.00      0.63      0.78    100000
+      BENIGN       0.73      1.00      0.84     97718
+
+    accuracy                           0.81    197718
+   macro avg       0.86      0.82      0.81    197718
+weighted avg       0.86      0.81      0.81    197718
+
+TOP 20 FEATURES
+======================================================================
+                    Feature  Importance
+   Bwd_Packets_Per_Duration    0.061039
+Fwd_Bwd_Packet_Length_Ratio    0.057120
+      Log_Bwd_Packets_per_s    0.052735
+      Bwd Packet Length Std    0.050450
+        Fwd_Byte_Proportion    0.042533
+       Bwd_Bytes_Per_Packet    0.037851
+         Fwd_Bwd_Byte_Ratio    0.037467
+              Bwd Packets/s    0.037423
+         Bwd_Fwd_Byte_Ratio    0.035805
+     Fwd_Bytes_Per_Duration    0.032873
+        Bwd_Byte_Proportion    0.031250
+     Init_Win_bytes_forward    0.031016
+          Max Packet Length    0.028844
+         Packet Length Mean    0.024748
+     Log_Packet_Length_Mean    0.023621
+     Packet Length Variance    0.023018
+       Avg Bwd Segment Size    0.021096
+     Bwd Packet Length Mean    0.020113
+          Min Packet Length    0.019246
+        Average Packet Size    0.018900

@@ -1,0 +1,23 @@
+EXPERIMENT 4F - CROSS ATTACK-TYPE GENERALIZATION
+======================================================================
+
+Dataset: CIC-IDS2017
+Attack families: DDoS, DoS, Patator
+Maximum attack samples per family: 50,000
+Maximum benign samples per family: 50,000
+Random state: 42
+
+Train_Attack_Family Test_Attack_Family  Training_Samples  Testing_Samples  Accuracy  Precision   Recall       F1  False_Positive  False_Negative  True_Positive  True_Negative
+               ddos                dos            100000           100000  0.499880   0.384615 0.000400 0.000799              32           49980             20          49968
+               ddos            patator            100000            63835  0.783269   0.000000 0.000000 0.000000               0           13835              0          50000
+                dos               ddos            100000           100000  0.816890   0.998396 0.634800 0.776125              51           18260          31740          49949
+                dos            patator            100000            63835  0.774747   0.005455 0.000217 0.000417             547           13832              3          49453
+            patator               ddos             63835           100000  0.499960   0.000000 0.000000 0.000000               4           50000              0          49996
+            patator                dos             63835           100000  0.500140   0.818182 0.000360 0.000720               4           49982             18          49996
+
+INTERPRETATION
+======================================================================
+
+Each row represents training on one attack family and testing on a different attack family.
+
+The diagonal cases are intentionally excluded because this experiment focuses on unseen attack-type generalization.

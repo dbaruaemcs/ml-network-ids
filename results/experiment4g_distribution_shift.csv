@@ -1,0 +1,61 @@
+Family_A,Family_B,Feature,KS_Statistic,P_Value
+dos,ddos,Flow Duration,0.4787,0.0
+dos,ddos,Flow IAT Mean,0.42145,0.0
+dos,ddos,Flow IAT Max,0.48840000000000006,0.0
+dos,ddos,Flow IAT Min,0.17850000000000005,3.232227517822584e-279
+dos,ddos,Packet Length Mean,0.38950000000000007,0.0
+dos,ddos,Packet Length Std,0.31399999999999995,0.0
+dos,ddos,Packet Length Variance,0.31399999999999995,0.0
+dos,ddos,Average Packet Size,0.38950000000000007,0.0
+dos,ddos,Fwd Packets/s,0.4505,0.0
+dos,ddos,Bwd Packets/s,0.3569000000000001,0.0
+dos,ddos,Flow Packets/s,0.4246381184097573,0.0
+dos,ddos,Fwd Packet Length Max,0.65675,0.0
+dos,ddos,Bwd Packet Length Max,0.32399999999999995,0.0
+dos,ddos,Fwd Packet Length Min,0.32975,0.0
+dos,ddos,Bwd Packet Length Min,0.00039999999999995595,1.0
+dos,ddos,Total Length of Fwd Packets,0.65675,0.0
+dos,ddos,Total Length of Bwd Packets,0.6113000000000001,0.0
+dos,ddos,Init_Win_bytes_forward,0.6139000000000001,0.0
+dos,ddos,Init_Win_bytes_backward,0.69155,0.0
+dos,ddos,Bwd Header Length,0.6159,0.0
+ddos,patator,Flow Duration,0.4961226418503795,0.0
+ddos,patator,Flow IAT Mean,0.5097663173111674,0.0
+ddos,patator,Flow IAT Max,0.49616720274665704,0.0
+ddos,patator,Flow IAT Min,0.24367793639320562,0.0
+ddos,patator,Packet Length Mean,0.63175,0.0
+ddos,patator,Packet Length Std,0.63175,0.0
+ddos,patator,Packet Length Variance,0.63175,0.0
+ddos,patator,Average Packet Size,0.63175,0.0
+ddos,patator,Fwd Packets/s,0.4959503614022407,0.0
+ddos,patator,Bwd Packets/s,0.4423565233104445,0.0
+ddos,patator,Flow Packets/s,0.4960581025002667,0.0
+ddos,patator,Fwd Packet Length Max,0.47705095771593775,0.0
+ddos,patator,Bwd Packet Length Max,0.63175,0.0
+ddos,patator,Fwd Packet Length Min,0.3673103541741959,0.0
+ddos,patator,Bwd Packet Length Min,0.0020499999999999963,0.9999999999999931
+ddos,patator,Total Length of Fwd Packets,0.500180701120347,0.0
+ddos,patator,Total Length of Bwd Packets,0.63135,0.0
+ddos,patator,Init_Win_bytes_forward,0.5014659559089266,0.0
+ddos,patator,Init_Win_bytes_backward,0.422840621611854,0.0
+ddos,patator,Bwd Header Length,0.501120346946151,0.0
+dos,patator,Flow Duration,0.5997657932779183,0.0
+dos,patator,Flow IAT Mean,0.6354331586555837,0.0
+dos,patator,Flow IAT Max,0.6280831586555837,0.0
+dos,patator,Flow IAT Min,0.42217793639320567,0.0
+dos,patator,Packet Length Mean,0.6503712323816407,0.0
+dos,patator,Packet Length Std,0.6416054391037225,0.0
+dos,patator,Packet Length Variance,0.6416054391037225,0.0
+dos,patator,Average Packet Size,0.6514885977593061,0.0
+dos,patator,Fwd Packets/s,0.6264717564148897,0.0
+dos,patator,Bwd Packets/s,0.7977896819660282,0.0
+dos,patator,Flow Packets/s,0.6372273164499324,0.0
+dos,patator,Fwd Packet Length Max,0.44279987350921585,0.0
+dos,patator,Bwd Packet Length Max,0.6404,0.0
+dos,patator,Fwd Packet Length Min,0.0375603541741959,1.845248236031815e-10
+dos,patator,Bwd Packet Length Min,0.0017999999999999128,1.0
+dos,patator,Total Length of Fwd Packets,0.44279987350921585,0.0
+dos,patator,Total Length of Bwd Packets,0.6377935128297796,0.0
+dos,patator,Init_Win_bytes_forward,0.3866159559089266,0.0
+dos,patator,Init_Win_bytes_backward,0.419740621611854,0.0
+dos,patator,Bwd Header Length,0.5001529815684858,0.0

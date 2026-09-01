@@ -1,0 +1,25 @@
+EXPERIMENT 4C - CONTROLLED DOMAIN ADAPTATION
+======================================================================
+
+Dataset: CIC-IDS2017
+Base training domain: Wednesday WorkingHours
+Adaptation domain: Friday Afternoon DDoS
+Evaluation domain: Held-out Friday traffic
+Random state: 42
+Destination Port: REMOVED
+
+EXPERIMENTAL QUESTION
+How does exposure to representative Friday DDoS training data affect cross-day detection?
+
+RESULTS
+======================================================================
+ Friday_DDoS_Exposure  Friday_DDoS_Training_Samples  Total_Training_Samples  Accuracy  Precision   Recall       F1  False_Positive  False_Negative  True_Positive  True_Negative
+                 0.00                             0                  200000  0.792668   0.998723 0.635230 0.776545              52           23350          40663          48807
+                 0.05                          3200                  203200  0.998458   0.999218 0.998063 0.998640              50             124          63889          48809
+                 0.10                          6401                  206401  0.998751   0.999187 0.998610 0.998898              52              89          63924          48807
+                 0.25                         16003                  216003  0.999132   0.999219 0.999250 0.999235              50              48          63965          48809
+                 0.50                         32007                  232007  0.999238   0.999157 0.999500 0.999328              54              32          63981          48805
+
+INTERPRETATION
+======================================================================
+The experiment compares increasing levels of representative Friday DDoS traffic in training while evaluating against a fixed held-out Friday test set.

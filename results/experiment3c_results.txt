@@ -1,0 +1,34 @@
+EXPERIMENT 3C - DO-SFAMILY CROSS-DAY GENERALIZATION
+======================================================================
+
+Training file: Wednesday-workingHours.pcap_ISCX.csv
+Training attack family: DoS
+Testing file: Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
+Testing attack type: DDoS
+Destination Port: REMOVED
+Random Forest trees: 100
+Random state: 42
+
+MODEL EVALUATION
+======================================================================
+Accuracy : 0.8149
+Precision: 0.9986
+Recall   : 0.6351
+F1 Score : 0.7764
+
+CLASSIFICATION REPORT
+======================================================================
+              precision    recall  f1-score   support
+
+      ATTACK       1.00      0.64      0.78    100000
+      BENIGN       0.73      1.00      0.84     97686
+
+    accuracy                           0.81    197686
+   macro avg       0.86      0.82      0.81    197686
+weighted avg       0.86      0.81      0.81    197686
+
+
+CONFUSION MATRIX
+======================================================================
+[[63507 36493]
+ [   91 97595]]

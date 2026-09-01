@@ -1,0 +1,38 @@
+MASTER EXPERIMENT RESULTS
+===========================================================================
+
+Dataset: CIC-IDS2017
+Project: Machine Learning Based Network Intrusion Detection
+
+The table below consolidates the principal results from Experiments 3A through 4E.
+
+Experiment                           Purpose  Accuracy  Precision  Recall     F1                             Source
+        3A         Multiclass classification    0.9990     0.9990  0.9990 0.9990           experiment3a_results.txt
+        3B          Cross-day generalization    0.6398     0.9952  0.2810 0.4382           experiment3b_results.txt
+        3C               DDoS generalization    0.8149     0.9986  0.6351 0.7764           experiment3c_results.txt
+        3D      DDoS false-negative analysis       NaN        NaN  0.6351    NaN           experiment3d_results.txt
+        4A Classification threshold analysis    0.8150     0.9991  0.6349 0.7764           experiment4a_results.txt
+        4B               Feature engineering    0.8147     0.9986  0.6346 0.7760           experiment4b_results.txt
+        4C            Target-domain exposure    0.9992     0.9992  0.9995 0.9993 experiment4c_domain_adaptation.csv
+        4D      Unseen attack-family testing    0.8710     0.0035  0.0002 0.0004           experiment4d_results.txt
+        4E         Cross-family DDoS testing    0.8143     0.9989  0.6335 0.7753           experiment4e_results.txt
+
+===========================================================================
+KEY OBSERVATIONS
+===========================================================================
+
+1. Random-split multiclass classification achieved very high performance (Experiment 3A, F1=0.9990).
+
+2. Cross-day evaluation produced substantially lower performance (Experiment 3B, F1=0.4382), demonstrating limited temporal generalization.
+
+3. DDoS-focused evaluation achieved F1=0.7764 with recall=0.6351, showing that false negatives remain a major challenge.
+
+4. Feature engineering in Experiment 4B produced performance very similar to the baseline DDoS model, indicating that engineered features alone did not solve the generalization problem.
+
+5. Target-domain exposure in Experiment 4C produced a dramatic improvement. With 25% exposure, F1 reached approximately 0.9992, demonstrating the importance of representative target-domain training data.
+
+6. Experiment 4D showed extremely poor transfer to an unseen attack family, with recall=0.0002 and F1=0.0004. High accuracy in this setting is therefore misleading because the model failed to detect attacks.
+
+7. Experiment 4G demonstrated substantial statistical distribution shifts between attack families, supporting the observed transfer-learning limitations.
+
+8. Overall, the experiments indicate that conventional random train/test evaluation can substantially overestimate the real-world generalization capability of ML-based intrusion detection models.

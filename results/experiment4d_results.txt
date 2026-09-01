@@ -1,0 +1,39 @@
+EXPERIMENT 4D - CROSS-DAY GENERALIZATION
+======================================================================
+
+Dataset: CIC-IDS2017
+Training domain: Wednesday WorkingHours
+Adaptation domain: Friday Afternoon DDoS
+Testing domain: Tuesday WorkingHours
+Friday DDoS exposure: 5%
+Friday DDoS training samples: 6,401
+Total training samples: 206,401
+Tuesday test samples: 113,835
+Number of features: 77
+
+MODEL EVALUATION
+======================================================================
+Accuracy : 0.8710
+Precision: 0.0035
+Recall   : 0.0002
+F1 Score : 0.0004
+False Positives: 853
+False Negatives: 13,832
+True Positives : 3
+True Negatives : 99,147
+
+CONFUSION MATRIX
+======================================================================
+[[99147   853]
+ [13832     3]]
+
+CLASSIFICATION REPORT
+======================================================================
+              precision    recall  f1-score   support
+
+      ATTACK       0.00      0.00      0.00     13835
+      BENIGN       0.88      0.99      0.93    100000
+
+    accuracy                           0.87    113835
+   macro avg       0.44      0.50      0.47    113835
+weighted avg       0.77      0.87      0.82    113835

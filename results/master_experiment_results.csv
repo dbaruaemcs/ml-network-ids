@@ -1,0 +1,10 @@
+Experiment,Purpose,Accuracy,Precision,Recall,F1,Source
+3A,Multiclass classification,0.999,0.999,0.999,0.999,experiment3a_results.txt
+3B,Cross-day generalization,0.6398,0.9952,0.281,0.4382,experiment3b_results.txt
+3C,DDoS generalization,0.8149,0.9986,0.6351,0.7764,experiment3c_results.txt
+3D,DDoS false-negative analysis,,,0.6351,,experiment3d_results.txt
+4A,Classification threshold analysis,0.815,0.9991,0.6349,0.7764,experiment4a_results.txt
+4B,Feature engineering,0.8147,0.9986,0.6346,0.776,experiment4b_results.txt
+4C,Target-domain exposure,0.999238,0.999157,0.9995,0.999328,experiment4c_domain_adaptation.csv
+4D,Unseen attack-family testing,0.871,0.0035,0.0002,0.0004,experiment4d_results.txt
+4E,Cross-family DDoS testing,0.8143,0.9989,0.6335,0.7753,experiment4e_results.txt

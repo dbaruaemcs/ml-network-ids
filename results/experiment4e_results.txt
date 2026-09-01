@@ -1,0 +1,38 @@
+EXPERIMENT 4E - REVERSE ATTACK-TYPE GENERALIZATION
+======================================================================
+
+Dataset: CIC-IDS2017
+Training domains: Tuesday + Wednesday
+Testing domain: Friday DDoS
+Friday DDoS used for training: NO
+
+Total training samples: 313,835
+Friday test samples: 197,718
+Number of features: 77
+
+MODEL EVALUATION
+======================================================================
+Accuracy : 0.8143
+Precision: 0.9989
+Recall   : 0.6335
+F1 Score : 0.7753
+False Positives: 69
+False Negatives: 36,651
+True Positives : 63,349
+True Negatives : 97,649
+
+CLASSIFICATION REPORT
+======================================================================
+              precision    recall  f1-score   support
+
+      ATTACK       1.00      0.63      0.78    100000
+      BENIGN       0.73      1.00      0.84     97718
+
+    accuracy                           0.81    197718
+   macro avg       0.86      0.82      0.81    197718
+weighted avg       0.86      0.81      0.81    197718
+
+CONFUSION MATRIX
+======================================================================
+[[97649    69]
+ [36651 63349]]

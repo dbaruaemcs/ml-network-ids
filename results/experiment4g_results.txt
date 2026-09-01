@@ -1,0 +1,45 @@
+EXPERIMENT 4G - FEATURE DISTRIBUTION SHIFT ANALYSIS
+======================================================================
+
+Dataset: CIC-IDS2017
+Attack families: DDoS, DoS, Patator
+Sample size per attack family: 20,000
+Random state: 42
+
+PAIRWISE DISTRIBUTION SHIFT
+======================================================================
+Family_A Family_B  Mean_KS  Median_KS  Max_KS
+    ddos  patator 0.487111   0.498174 0.63175
+     dos     ddos 0.435319   0.423044 0.69155
+     dos  patator 0.522084   0.627277 0.79779
+
+TOP 20 DISTRIBUTION SHIFTS
+======================================================================
+Family_A Family_B                     Feature  KS_Statistic  P_Value
+     dos  patator               Bwd Packets/s      0.797790      0.0
+     dos     ddos     Init_Win_bytes_backward      0.691550      0.0
+     dos     ddos Total Length of Fwd Packets      0.656750      0.0
+     dos     ddos       Fwd Packet Length Max      0.656750      0.0
+     dos  patator         Average Packet Size      0.651489      0.0
+     dos  patator          Packet Length Mean      0.650371      0.0
+     dos  patator           Packet Length Std      0.641605      0.0
+     dos  patator      Packet Length Variance      0.641605      0.0
+     dos  patator       Bwd Packet Length Max      0.640400      0.0
+     dos  patator Total Length of Bwd Packets      0.637794      0.0
+     dos  patator              Flow Packets/s      0.637227      0.0
+     dos  patator               Flow IAT Mean      0.635433      0.0
+    ddos  patator         Average Packet Size      0.631750      0.0
+    ddos  patator          Packet Length Mean      0.631750      0.0
+    ddos  patator           Packet Length Std      0.631750      0.0
+    ddos  patator      Packet Length Variance      0.631750      0.0
+    ddos  patator       Bwd Packet Length Max      0.631750      0.0
+    ddos  patator Total Length of Bwd Packets      0.631350      0.0
+     dos  patator                Flow IAT Max      0.628083      0.0
+     dos  patator               Fwd Packets/s      0.626472      0.0
+
+INTERPRETATION
+======================================================================
+
+The Kolmogorov-Smirnov statistic measures the difference between the empirical distributions of two attack families. Higher values indicate greater distribution difference.
+
+Large distribution differences can indicate feature-level domain shift and may help explain poor cross-attack generalization.
